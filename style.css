@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background: #087388;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo img{
+    margin: 15px 0px 0px 20px ;
+    width: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border-radius: 30px;
+    background: #5ac3d8;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+.bg {
+   
+    background-image: url(https://e0.pxfuel.com/wallpapers/701/1000/desktop-wallpaper-office-work-business-office.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+.containerBtn{
+    position: fixed;
+  inset: 0px;
+  width: 12rem;
+  height: 5rem;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: auto;
+
+}
+button{
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border-radius: 20px;
+    font-size: large;
+    padding: 10px 30px;
+    outline: none;
+    text-decoration: none;
+    
+}
+button:hover{
+    background-color: #087388;
+}
+@media (max-width:952px) {
+    label.logo img{
+        margin: 15px 0px 0px 25px ;
+
+    }
+    
+    nav ul li a {
+        font: 16px;
+    }
+
+}
+
+@media (max-width: 898px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #087388;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.hover,
+    a:active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+   
+}
+
