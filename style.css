@@ -11,7 +11,6 @@ body {
 }
 
 nav {
-    background: #087388;
     height: 80px;
     width: 100%;
 }
@@ -32,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
@@ -65,7 +64,7 @@ a:hover {
    
     background-image: url(https://e0.pxfuel.com/wallpapers/701/1000/desktop-wallpaper-office-work-business-office.jpg);
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 10px);
 }
 .containerBtn{
     position: fixed;
